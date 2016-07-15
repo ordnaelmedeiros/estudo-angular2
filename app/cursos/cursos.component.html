@@ -1,0 +1,6 @@
+<h3>Cursos {{nome}}</h3>
+<ul>
+    <li *ngFor="let curso of cursos ">{{curso.nome}}</li>
+</ul>
+<input [(ngModel)]="teste.nome" placeholder="nome"/>
+<button (click)="mostrar(teste)">Clique</button>
