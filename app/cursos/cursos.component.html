@@ -1,6 +1,9 @@
 <h3>Cursos {{nome}}</h3>
+
+<input #txtNome [(ngModel)]="curso.nome" placeholder="nome"/>
+<p>{{msgErro}}</p>
+<button (click)="salvar()">Salvar</button> <br/><br/>
+
 <ul>
-    <li *ngFor="let curso of cursos ">{{curso.nome}}</li>
+    <li *ngFor="let cur of cursos ">{{cur.id}} - {{cur.nome}}  - <button (click)="editar(cur)">Editar</button><button (click)="excluir(cur)">Excluir</button></li>
 </ul>
-<input [(ngModel)]="teste.nome" placeholder="nome"/>
-<button (click)="mostrar(teste)">Clique</button>
