@@ -43,7 +43,7 @@ var CursosComponent = (function () {
                 }
             }
         }
-        this.txtNome.nativeElement.focus();
+        //this.txtNome.nativeElement.focus();
     };
     CursosComponent.prototype.excluir = function (cur) {
         for (var index = 0; index < this.cursos.length; index++) {
@@ -53,16 +53,16 @@ var CursosComponent = (function () {
                 break;
             }
         }
-        this.txtNome.nativeElement.focus();
+        //this.txtNome.nativeElement.focus();
     };
     CursosComponent.prototype.editar = function (cur) {
         this.curso.id = cur.id;
         this.curso.nome = cur.nome;
-        this.txtNome.nativeElement.focus();
+        //this.txtNome.nativeElement.focus();
     };
     __decorate([
         core_1.ViewChild('txtNome'), 
-        __metadata('design:type', Object)
+        __metadata('design:type', HTMLInputElement)
     ], CursosComponent.prototype, "txtNome", void 0);
     CursosComponent = __decorate([
         core_1.Component({

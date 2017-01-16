@@ -10,7 +10,7 @@ import { CursosService } from './cursos.service';
 })
 export class CursosComponent {
     
-    @ViewChild('txtNome') txtNome;
+    @ViewChild('txtNome') txtNome:HTMLInputElement;
 
     msgErro:String = "";
 
@@ -59,7 +59,7 @@ export class CursosComponent {
             
         }
 
-        this.txtNome.nativeElement.focus();
+        //this.txtNome.nativeElement.focus();
 
     }
 
@@ -71,13 +71,13 @@ export class CursosComponent {
                 break;
             }
         }
-        this.txtNome.nativeElement.focus();
+        //this.txtNome.nativeElement.focus();
     }
 
     editar(cur:Curso) {
         this.curso.id = cur.id;
         this.curso.nome = cur.nome;
-        this.txtNome.nativeElement.focus();
+        //this.txtNome.nativeElement.focus();
     }
 
 }
